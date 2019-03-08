@@ -21,7 +21,7 @@
       .story {
         display:inline-block;
         width: 250px;
-        margin-right:20px;
+        padding-right:20px;
         margin-top:20px;
         font-size: 80%;
       }
@@ -60,7 +60,6 @@
       }
 
       .story--last {
-        margin-right: 0;
       }
 	@media screen and (min-width:600px) {
 		h1 {
@@ -86,7 +85,7 @@
         font-size: 1.5em;
       }
 	  .story {
-       width:80%;
+       width: 250px;
       }
 	  .story--main {
         position: relative;
