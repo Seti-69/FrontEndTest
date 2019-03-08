@@ -1,0 +1,15 @@
+﻿.btn{
+	width:250px;
+	margin-top:10px;
+	margin-left:10px;
+	content:url(button.png);
+	-webkit-transition:width , height ,margin-top,margin-left,-webkit-transform ;
+	transition: width , height,margin-top,margin-left ,transform ;
+	transition-duration:2s;
+	}
+.btn:hover{
+	width:350px;
+	margin-top:-10px;
+	margin-left:-10px;
+	}
+	

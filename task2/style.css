@@ -1,0 +1,102 @@
+﻿ * {
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 3.5em;
+      }
+
+      .wrapper {
+        width:100%;
+		max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .listing {
+        overflow: hidden;
+        margin: 0 0 25px 0;
+		text-align:center;
+      }
+
+      .story {
+        display:inline-block;
+        width: 250px;
+        margin-right:20px;
+        margin-top:20px;
+        font-size: 80%;
+      }
+
+      .story img {
+        display: block;
+		margin:auto;
+		width:100%;
+      }
+
+      .story__intro {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.75);
+        padding: 20px;
+        color: white;
+      }
+
+      .story__intro h2 {
+        margin: 0 0 10px 0;
+      }
+
+      .story__intro p {
+        margin: 0;
+      }
+
+      .story--main {
+        position: relative;
+        margin: 0 0 0 0;
+        width: 100%;
+      }
+      .story--main .story__intro h2 {
+        font-size: 2.5em;
+      }
+
+      .story--last {
+        margin-right: 0;
+      }
+	@media screen and (min-width:600px) {
+		h1 {
+			font-size: 3.5em;
+		  }
+		  .story--main .story__intro h2 {
+			font-size: 2.5em;
+			}
+		.story {
+        width: 250px;
+      }
+	  .story--main {
+        position: relative;
+        margin: 0 0 0 0;
+        width: 100%;
+      }
+	  }
+	@media screen and (max-width:600px) {
+		h1 {
+			font-size: 2.5em;
+		  }
+		  .story--main .story__intro h2 {
+        font-size: 1.5em;
+      }
+	  .story {
+       width:80%;
+      }
+	  .story--main {
+        position: relative;
+        margin: 0 0 0 0;
+        width: 100%;
+      }
+	  }
+	  
+	  @media screen and (max-width:450px) {
+		h1 {
+			font-size: 1.7em;
+		  }
+	  }

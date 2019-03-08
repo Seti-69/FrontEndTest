@@ -1,8 +1,8 @@
 # Front End Technical Tasks
 
-Please find assets for each technical task included within this repository. We recommend forking this repo or sending us a link to a codepen (http://codepen.io/).
+Tasks completed by Steve Luke
 
-We don't expect everything to be a perfect match. It's open book, feel free to hit Google but be prepared to explain your solution.
+Time taken:
 
 ## Task 1
 
