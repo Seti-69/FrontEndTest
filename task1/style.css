@@ -1,15 +1,99 @@
 ﻿.btn{
-	width:250px;
+	
+	content:"BOZBOZ";
+	width:300px;
+	height:140px
 	margin-top:10px;
 	margin-left:10px;
-	content:url(button.png);
-	-webkit-transition:width , height ,margin-top,margin-left,-webkit-transform ;
-	transition: width , height,margin-top,margin-left ,transform ;
+	border:3px solid;
+	position:relative;
+	top:40px;
+	border-color:#ffffff;
+	color:#ffffff;
+	background-color:#000000;
+	border-radius:25px;
+	padding:30px;
+	padding-left:60px;
+	padding-right:60px;
+	text-decoration:none;
+	visibility:hidden;
+	/*content:url(button.png);*/
+	-webkit-transition:width , height ,margin-top,margin-left,-webkit-transform,padding ,font-size;
+	transition: width , height,margin-top,margin-left ,transform,padding,font-size ;
+	transition-duration:2s;
+	}
+	.btn::before{
+	content:"BOZBOZ";
+	position:absolute;
+	z-index:-1;
+	width:40px;
+	height:30px;
+	margin-top:5px;
+	margin-left:-65px;
+	border-radius:28px;
+	background-color:#000000;
+	padding:30px;
+	padding-left:70px;
+	padding-right:70px;
+	box-shadow:	5px 5px 10px #777777;
+	font-size:14px;
+	visibility:visible;
+	-webkit-transition:width , height ,margin-top,margin-left,-webkit-transform,padding ;
+	transition: width , height,margin-top,margin-left ,transform,padding ;
 	transition-duration:2s;
 	}
 .btn:hover{
-	width:350px;
-	margin-top:-10px;
+	width:400px;
+	height:70px;
+	margin-top:10px;
 	margin-left:-10px;
+	padding:50px;
+	padding-left:90px;
+	padding-right:90px;
+	font-size:24px;
 	}
-	
+
+	.btn:hover::before{
+	width:85px;
+	height:60px;
+	margin-top:-14px;
+	margin-left:-95px;
+	padding:40px;
+	padding-left:90px;
+	padding-right:90px;
+	}
+	.btn::after{
+	position:absolute;
+	content:"BOZBOZ";
+	width:49px;
+	height:17px;
+	margin-top:-12px;
+	margin-left:-112px;
+	border:3px solid;
+	border-color:#ffffff;
+	color:#ffffff;
+	background-image:linear-gradient(#777777,black);
+	border-radius:25px;
+	padding:30px;
+	padding-left:60px;
+	padding-right:60px;
+	font-family:Arial;
+	font-weight:bold;
+	text-decoration:none;
+	top:10px;
+	visibility:visible;
+	-webkit-transition:width , height ,margin-top,margin-left,-webkit-transform,padding ,font-size;
+	transition: width , height,margin-top,margin-left ,transform,padding,font-size ;
+	transition-duration:2s;
+	}
+	.btn:hover::after{
+	position:absolute;
+	width:72px;
+	height:45px;
+	margin-top:-10px;
+	margin-left:-165px;
+	padding:40px;
+	padding-left:90px;
+	padding-right:90px;
+	font-size:24px;
+	}
