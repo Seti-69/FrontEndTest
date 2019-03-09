@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='GetData.js'></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <h1>Search by ID Result</h1>
+        <table id="json02">
+                
+        </table>
+       <a href="index.html">BACK</a>
+  </body>
+    <script>
+        var getData = new GetData();
+        var id = getID("ID");
+        getData.search("https://jsonplaceholder.typicode.com/posts/"+id);
+        function getID(id) {
+            return decodeURI(
+                (RegExp(id+'='+'(.+?)(&|$)').exec(location.search)||[,null])[1]
+                );
+
+        }
+    </script>
+</html>

@@ -79,6 +79,9 @@
     <Content Include="task1\style.css" />
     <Content Include="task2\index.html" />
     <Content Include="task2\style.css" />
+    <Content Include="task3\GetData.js" />
+    <Content Include="task3\index.html" />
+    <Content Include="task3\search.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include=".git\" />

@@ -2,7 +2,7 @@
 
 Tasks completed by Steve Luke
 
-Time taken:
+Time taken: 9.5hrs
 
 ## Task 1
 

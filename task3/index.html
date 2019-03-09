@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Grab and display JSON data</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='GetData.js'></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+        <h1>Search by ID</h1>
+        <div id="json02">
+            <form action="search.html" type="GET">
+                <input type="text" name="ID" value=""/>
+                <input type="image"  value="Search" onClick=""/>
+            </form>
+            
+        </div>
+        <h1>Entire User List</h1>
+        <div >
+            <table id="json01">
+                
+            </table>
+        </div>
+        
+        <h1>JSON data 03</h1>
+        <div >
+            <table id="json03">
+                
+            </table>
+        </div>
+
+      
+    </div>
+  </body>
+    <script>
+        var getData = new GetData();
+        getData.getjson01("https://jsonplaceholder.typicode.com/posts");
+        //getData.getjson03("https://jsonplaceholder.typicode.com/posts/2/comments");
+        
+    </script>
+</html>
