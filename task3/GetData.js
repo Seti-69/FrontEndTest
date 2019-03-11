@@ -1,9 +1,9 @@
 ﻿class GetData{
 
     
-    contructor(url){
+    contructor(){
         
-        this.url=url;
+        
     }
 
   getjson01(url){
